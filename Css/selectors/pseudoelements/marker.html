@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marker Pseudo-Elements-Selectors</title>
+    <style>
+        ul>li::marker{
+            color: red;
+        }
+        ol>li::marker{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Marker Pseudo-Elements-Selectors</h1>
+    <p>It will target the markers of every List items</p>
+    <ul>
+        <li>List Items</li>
+        <li>List Items</li>
+        <li>List Items</li>
+    </ul>
+    <ol>
+        <li>List Items</li>
+        <li>List Items</li>
+        <li>List Items</li>
+    </ol>
+</body>
+</html>

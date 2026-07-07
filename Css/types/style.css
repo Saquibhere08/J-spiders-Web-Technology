@@ -1,0 +1,14 @@
+h1{
+            border: 10px solid;
+            border-color: chocolate;
+            background-color: brown;
+            color: blue;
+}
+
+h2{
+    color: cyan;
+    border: 12px dotted;
+    border-color: black;
+    background-color: aquamarine;
+
+}

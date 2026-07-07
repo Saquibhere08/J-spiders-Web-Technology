@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <form>
+      Enter Personal Details: <br /><br />
+
+      <fieldset>
+        <legend>Personal Details</legend>
+        <input
+          type="text"
+          size="50"
+          name="username"
+          placeholder="username"
+          autocomplete="off"
+          required
+          minlength="3"
+          maxlength="10"
+          autofocus
+        />
+        <br /><br />
+        <input
+          type="password"
+          pattern="/[A-Z]/"
+          size="50"
+          name="password"
+          placeholder="Password"
+          autocomplete="off"
+        />
+        <br /><br />
+        <input
+          type="email"
+          size="50"
+          name="email"
+          placeholder="Email"
+          autocomplete="off"
+        />
+        <br /><br />
+        <input
+          type="number"
+          name="age"
+          name="Age"
+          step="5"
+          min="18"
+          max="60"
+          placeholder="Age"
+        />
+        <br /><br />
+        <input type="tel" name="deptno" value="45" readonly /> <br /><br />
+        <input type="file" name="resume" accept=".pdf" multiple /> <br /><br />
+      </fieldset>
+
+      <fieldset>
+        <legend>Gender:</legend>
+        <input type="radio" name="gender" value="male" checked /> male
+        <input type="radio" name="gender" value="female" /> Female
+        <input type="radio" name="gender" value="others" disabled /> others
+        <br /><br />
+      </fieldset>
+
+      <fieldset>
+        <legend>Language:</legend>
+        <input type="checkbox" name="language" value="English" /> English
+        <input type="checkbox" name="language" value="Hindi" checked /> Hindi
+        <input type="checkbox" name="language" value="Gaali" disabled /> Gaali
+        <br /><br />
+        <button>Submit</button>
+      </fieldset>
+    </form>
+    <!-- Notes-Attributes of Input----------------------------------------------------------------------
+        type - type of input
+        name - used to send the data to backend
+        id - gives unqiue name
+        value - represents the value of input
+        src - to give image path
+        placeholder - gives the reference message
+        autocomplete - on/off the suggestions
+        minlength - minimum no. of characters in the text field
+        maxlength - maximum no. of characters in the text field
+        min - minimum no. in number field
+        max - maximum no. in number field
+        readonly - ineditable
+        required - makes the input field mandatory
+        autofocus -focus the input field  automatically
+        size - width of input
+        pattern - custom validation code using regular expression
+        accept - accept only the files with particular extentions like .png, .jpg ..etc.
+        multiple - accepts multiple files in the file type
+        step - increase/ decrease the number in number type
+        disabled - it is used to disable radio / checkboxes
+        checked - preselects the radio /checkboxes
+        --------------------------------------------------------------------------------
+    -->
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selection Pseudo-Elements-Selectors</title>
+    <style>
+      h1::selection {
+        background-color: black;
+        color: white;
+      }
+      p::selection {
+        background-color: yellow;
+        color: white;
+      }
+      #li::selection,
+      .rr::selection {
+        background-color: brown;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Selection Pseudo-Elements-Selectors</h1>
+    <p>It is used to apply the styles only when user selects the text.</p>
+    <br />
+    <ul>
+      <li>Items</li>
+      <li id="li">Items select here</li>
+      <li>Items</li>
+      <li class="rr">Items select here</li>
+      <li>Items</li>
+    </ul>
+  </body>
+</html>

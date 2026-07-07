@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>General Sibling Selectors</title>
+    <style>
+      div ~ h1 {
+        color: red;
+      }
+      div ~ p {
+        color: blue;
+      }
+      h1 ~ p {
+        color: purple;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>General Sibling Selectors</h1>
+    <p>
+      It is used to target all the General members that come after the specified
+      tag.
+    </p>
+    <p>It is represented with <b> '' ~ '' </b></p>
+
+    <div>
+      <h1>Direct member of div</h1>
+      <h1>Direct member of div</h1>
+      <h1>Direct member of div</h1>
+      <p>Direct member of div</p>
+      <span>
+        <h1>InDirect member of div</h1>
+        <p>InDirect member of div</p>
+      </span>
+    </div>
+    <div>
+      <h1>Direct member of div</h1>
+      <h1>Direct member of div</h1>
+      <h1>Direct member of div</h1>
+      <p>Direct member of div</p>
+      <span>
+        <h1>InDirect member of div</h1>
+        <p>InDirect member of div</p>
+      </span>
+    </div>
+  </body>
+</html>

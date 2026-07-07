@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Selectors</title>
+    <style>
+      .td {
+        background-color: yellow;
+      }
+      .pp {
+        color: red;
+      }
+      .li {
+        background-color: black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="pp">Class Selectors</h1>
+    <p>It is used to target more than 1 Element.</p>
+    <p class="pp">id must be represented with .</p>
+    <p>It values can be duplicated</p>
+    <p>An Element can have more than 1 class</p>
+    <p class="pp">id have least priority than id</p>
+
+    <ul>
+      <li class="li">List Items</li>
+      <li>List Items</li>
+      <li class="li">List Items</li>
+    </ul>
+    <table border="20" cellpadding="20">
+      <tbody>
+        <tr>
+          <td class="td">Table Data</td>
+          <td>Table Data</td>
+          <td>Table Data</td>
+        </tr>
+        <tr>
+          <td>Table Data</td>
+          <td class="td">Table Data</td>
+          <td>Table Data</td>
+        </tr>
+        <tr>
+          <td>Table Data</td>
+          <td>Table Data</td>
+          <td class="td">Table Data</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

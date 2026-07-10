@@ -129,6 +129,3 @@ module.exports = router;
 - Express.js Documentation
 - MongoDB Documentation
 
-## License
-
-MIT License

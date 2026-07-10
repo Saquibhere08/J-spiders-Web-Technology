@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saquib Bin Halim | Systems & Development Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-bracket">[</span><span class="logo-char">A</span><span class="logo-bracket">]</span>
+            </a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-item">~/home</a></li>
+                <li><a href="#console-shell" class="nav-item">~/sql-term</a></li>
+                <li><a href="#experience" class="nav-item">~/experience</a></li>
+                <li><a href="#projects" class="nav-item">~/projects</a></li>
+                <li><a href="#skills" class="nav-item">~/skills</a></li>
+                <li><a href="#education" class="nav-item">~/education</a></li>
+                <li><a href="#testimonials" class="nav-item">~/testimonials</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="console-container">
+        
+        <header class="terminal-banner">
+            <div class="banner-status-group">
+                <div class="banner-status">
+                    <span class="status-dot online"></span>
+                    <span class="status-text">SYS_NODE: HYDERABAD</span>
+                </div>
+                <div class="telemetry-item">DB_CONN: <span id="telemetry-db" class="cron-value">3/50</span></div>
+                <div class="telemetry-item">BUFF_HIT: <span id="telemetry-buffer" class="cron-value">99.4%</span></div>
+                <div class="telemetry-item">LATENCY: <span id="telemetry-latency" class="cron-value">14ms</span></div>
+            </div>
+            <div class="banner-timestamp" id="live-timestamp">SYS_TIME: LOADING...</div>
+        </header>
+
+        <section id="home" class="console-section active-section">
+            <div class="profile-grid">
+                <div class="profile-info">
+                    <div class="sys-path">saquib@root:~$ whoami</div>
+                    <h1 class="glitch-text">Saquib Bin Halim</h1> [cite: 1]
+                    <p class="subtitle">Computer Science Graduate | Systems & Full-Stack Developer</p>
+                    
+                    <div class="resume-summary">
+                        <p class="console-log-text">
+                            Computer Science graduate with hands-on experience in full-stack web development, cloud-based serverless architectures, and machine learning applications. [cite: 4]
+                            Proficient in Java, Python, SQL, and AWS, with a strong foundation in data structures, API, and scalable system design. [cite: 5]
+                            Passionate about building efficient, user-centric solutions and solving real-world problems through technology. [cite: 6]
+                        </p>
+                    </div>
+
+                    <div class="contact-terminal">
+                        <div class="contact-item"><i class="fa-solid fa-location-dot"></i> <span>Hyderabad, India</span></div> [cite: 2]
+                        <div class="contact-item"><i class="fa-solid fa-envelope"></i> <span>saquibbinhalim.365@gmail.com</span></div> [cite: 2]
+                        <div class="contact-item"><i class="fa-solid fa-phone"></i> <span>+91-9707171653</span></div> [cite: 2]
+                        <div class="contact-item"><i class="fa-brands fa-github"></i> <a href="https://github.com/Saquibhere08" target="_blank">github.com/Saquibhere08</a></div> [cite: 2]
+                    </div>
+
+                    <div class="action-buttons">
+                        <a href="resume.pdf" download="Saquib_Bin_Halim_Resume.pdf" class="btn btn-primary">
+                            <i class="fa-solid fa-download"></i> DOWNLOAD_RESUME.EXE
+                        </a>
+                        <a href="#console-shell" class="btn btn-secondary">
+                            <i class="fa-solid fa-terminal"></i> INITIALIZE_SHELL
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="console-shell" class="console-section">
+            <div class="sys-path">saquib@root:~$ psql -U guest -d saquib_portfolio</div>
+            <h2 class="section-title">Interactive Database Shell</h2>
+            <p class="section-instruction">Type commands inside the interface below to run operations directly on the portfolio infrastructure. Type <span class="highlight-token">help</span> to view all commands.</p>
+            
+            <div class="database-terminal">
+                <div class="terminal-header">
+                    <span class="terminal-title-text"><i class="fa-solid fa-database"></i> PostgreSQL 16.2 Connection Pool Terminal</span>
+                    <div class="terminal-window-buttons">
+                        <span class="t-btn"></span>
+                        <span class="t-btn"></span>
+                        <span class="t-btn"></span>
+                    </div>
+                </div>
+                <div class="terminal-body" id="terminal-body-output">
+                    <div class="output-line">Welcome to the interactive portfolio query database. Connection established successfully.</div>
+                    <div class="output-line">Type 'help' to fetch structured records options.</div>
+                </div>
+                <div class="terminal-input-row">
+                    <span class="terminal-prompt">saquib_db=></span>
+                    <input type="text" id="terminal-query-input" autocomplete="off" autofocus placeholder="Type query here...">
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="console-section">
+            <div class="sys-path">saquib@root:~$ cat /var/log/experience</div>
+            <h2 class="section-title">Work Experience</h2>
+            
+            <div class="experience-card">
+                <div class="card-header">
+                    <div class="job-title">Web Development Intern</div> [cite: 8]
+                    <div class="job-date">2024 - 2025</div> [cite: 13]
+                </div>
+                <div class="job-company">Assam Electronics Development Corporation Ltd.</div> [cite: 10]
+                <ul class="console-bullets">
+                    <li>Built a responsive wallpaper website with categorized browsing.</li> [cite: 9]
+                    <li>Implemented secure file downloads and improved UI/UX.</li> [cite: 11]
+                    <li>Optimized performance for faster loading and enhanced user experience.</li> [cite: 12]
+                </ul>
+            </div>
+        </section>
+
+        <section id="projects" class="console-section">
+            <div class="sys-path">saquib@root:~$ ls -la /home/saquib/projects</div>
+            <h2 class="section-title">Notable Projects</h2>
+
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-tags">Python, ML</div> [cite: 16]
+                    <h3>House Price Prediction System</h3> [cite: 15]
+                    <ul class="console-bullets">
+                        <li>Developed a machine learning model with scikit-learn for price prediction.</li> [cite: 17]
+                        <li>Applied feature engineering and model tuning techniques.</li> [cite: 18]
+                    </ul>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-tags">AWS</div> [cite: 20]
+                    <h3>Serverless File Sharing System</h3> [cite: 19]
+                    <ul class="console-bullets">
+                        <li>Used AWS Lambda, S3, and API Gateway to build a serverless architecture; used Postman for API testing.</li> [cite: 21]
+                        <li>Built secure file upload and download API.</li> [cite: 22]
+                    </ul>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-tags">Web Full Stack</div> [cite: 24]
+                    <h3>Healthcare Grievance System</h3> [cite: 23]
+                    <ul class="console-bullets">
+                        <li>Developed a complaint management system with real-time updates using Pusher. Created an admin dashboard for tracking and analytics.</li> [cite: 25]
+                        <li>Designed separate complaints portals for patients, doctors, and the general public.</li> [cite: 26]
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="console-section">
+            <div class="sys-path">saquib@root:~$ query-db --skills</div>
+            <h2 class="section-title">Technical Skills</h2>
+
+            <div class="skills-wrapper">
+                <div class="skills-schema-box">
+                    <div class="schema-header">LANGUAGES &amp; REPOS</div>
+                    - <strong>Programming Languages:</strong> Java, SQL, Python, C/C++, JavaScript <br> [cite: 28]
+                    - <strong>Web Environment:</strong> HTML, CSS, JavaScript, Laravel [cite: 29]
+                </div>
+
+                <div class="skills-schema-box">
+                    <div class="schema-header">INFRASTRUCTURE &amp; ENVS</div>
+                    - <strong>Databases:</strong> MySQL, PostgreSQL, Oracle SQL, MongoDB <br> [cite: 30]
+                    - <strong>Cloud &amp; Tools:</strong> GitHub, Postman, VS Code, IntelliJ IDEA, Eclipse IDE, Git, Amazon AWS services [cite: 30]
+                </div>
+
+                <div class="skills-schema-box">
+                    <div class="schema-header">CORE THEORY</div>
+                    - <strong>Concepts:</strong> OOP, Problem Solving, API, MVC, ML/AI, Neural Networks, Cloud Computing <br> [cite: 31]
+                    - <strong>Operating Systems:</strong> Windows, Linux, MacOS [cite: 31]
+                </div>
+
+                <div class="skills-schema-box">
+                    <div class="schema-header">ARTIFICIAL INTELLIGENCE</div>
+                    - <strong>AI/ML Toolkit:</strong> Scikit-Learn, Feature Engineering, Model Evaluation, Gen AI, Neural Network basics [cite: 32]
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="console-section">
+            <div class="sys-path">saquib@root:~$ cat /etc/education_history</div>
+            <h2 class="section-title">Education &amp; Certifications</h2>
+
+            <div class="edu-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-meta">
+                        <span class="timeline-date">2022 - 2025</span> [cite: 41]
+                        <span class="timeline-metric">CGPA: 7.56</span> [cite: 42]
+                    </div>
+                    <h3>B.Tech in Computer Science and Engineering</h3> [cite: 36]
+                    <p class="institution">Jorhat Engineering College</p> [cite: 37]
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-meta">
+                        <span class="timeline-date">2019 - 2022</span> [cite: 39]
+                        <span class="timeline-metric">CGPA: 9.0</span> [cite: 40]
+                    </div>
+                    <h3>Diploma in Computer Engineering</h3> [cite: 34]
+                    <p class="institution">Nowgong Polytechnic</p> [cite: 35]
+                </div>
+            </div>
+
+            <div class="sys-path" style="margin-top: 2rem;">saquib@root:~$ verify-license --all</div>
+            <div class="certifications-grid">
+                <div class="cert-card">
+                    <div class="cert-vendor">ORACLE</div>
+                    <h4>Oracle Cloud Infrastructure 2025 AI Foundations Associate</h4> [cite: 43]
+                    <p>Gained foundational knowledge of AI, machine learning, and generative AI concepts using Oracle Cloud technologies.</p> [cite: 43]
+                </div>
+                <div class="cert-card">
+                    <div class="cert-vendor">UDEMY</div>
+                    <h4>Java &amp; MySQL Backend Certification</h4> [cite: 44]
+                    <p>Acquired skills in Java programming and database management using MySQL for backend development.</p> [cite: 44]
+                </div>
+                <div class="cert-card">
+                    <div class="cert-vendor">SECURITY</div>
+                    <h4>Cyber Security Fundamentals</h4> [cite: 45]
+                    <p>Learned fundamentals of Cyber security including network security, threats, and best practices for protecting systems.</p> [cite: 45]
+                </div>
+                <div class="cert-card">
+                    <div class="cert-vendor">GOOGLE</div>
+                    <h4>AI Essentials</h4> [cite: 46]
+                    <p>Learned core AI concepts and practical applications of AI tools in real-world scenarios.</p> [cite: 46]
+                </div>
+            </div>
+
+            <div class="sys-path" style="margin-top: 2rem;">saquib@root:~$ cat /proc/achievements</div>
+            <div class="achievements-container">
+                <ul class="console-bullets">
+                    <li><strong>Google Developer Students Club Member (2022-2025)</strong></li> [cite: 48]
+                    <li>Secured Rank 32 in the All Assam Chess Championships</li> [cite: 48]
+                    <li>Badminton Champion - Phoenix College Fest (2024)</li> [cite: 48]
+                    <li>Gold Medalist in Table Tennis District Championships</li> [cite: 49]
+                </ul>
+            </div>
+        </section>
+
+        <section id="testimonials" class="console-section">
+            <div class="sys-path">saquib@root:~$ review-feedback --render</div>
+            <h2 class="section-title">Testimonials &amp; Peer Evaluations</h2>
+
+            <div class="carousel-container">
+                <div class="carousel-track-container">
+                    <ul class="carousel-track">
+                        <li class="carousel-slide current-slide">
+                            <div class="testimonial-content">
+                                <i class="fa-solid fa-quote-left quote-icon"></i>
+                                <p class="testimonial-text">
+                                    [SYSTEM NOTE: Peer evaluation placeholder. Insert valid references from supervisors or collaborative teammates here to demonstrate professional engineering alignment.]
+                                </p>
+                                <span class="testimonial-author">// Evaluator Signature #01</span>
+                                <span class="testimonial-title">Senior Project Lead</span>
+                            </div>
+                        </li>
+                        <li class="carousel-slide">
+                            <div class="testimonial-content">
+                                <i class="fa-solid fa-quote-left quote-icon"></i>
+                                <p class="testimonial-text">
+                                    [SYSTEM NOTE: Academic or industrial recommendation placeholder. Update this block with authenticated feedback reflecting high capability in scalable applications.]
+                                </p>
+                                <span class="testimonial-author">// Evaluator Signature #02</span>
+                                <span class="testimonial-title">Academic Advisor / Supervisor</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="carousel-nav">
+                    <button class="carousel-btn btn-left"><i class="fa-solid fa-chevron-left"></i></button>
+                    <button class="carousel-btn btn-right"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+                <div class="carousel-dots">
+                    <button class="carousel-dot active-dot"></button>
+                    <button class="carousel-dot"></button>
+                </div>
+            </div>
+        </section>
+
+        <footer class="console-footer">
+            <p>&copy; 2026 Saquib Bin Halim. All rights reserved. // SYS_STATUS: OPERATIONAL</p>
+        </footer>
+
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>
